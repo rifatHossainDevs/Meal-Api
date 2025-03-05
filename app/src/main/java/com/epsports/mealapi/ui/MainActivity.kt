@@ -1,4 +1,4 @@
-package com.epsports.mealapi
+package com.epsports.mealapi.ui
 
 import android.content.Intent
 import android.os.Bundle

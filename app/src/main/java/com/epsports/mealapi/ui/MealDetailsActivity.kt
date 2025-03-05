@@ -1,4 +1,4 @@
-package com.epsports.mealapi
+package com.epsports.mealapi.ui
 
 import android.annotation.SuppressLint
 import android.content.Intent

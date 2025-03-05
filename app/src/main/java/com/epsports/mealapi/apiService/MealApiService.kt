@@ -3,6 +3,7 @@ package com.epsports.mealapi.apiService
 import com.epsports.mealapi.model.ResponseMealCategoryDetails
 import com.epsports.mealapi.model.ResponseMealDetails
 import com.epsports.mealapi.model.ResponseMealsCategory
+import com.epsports.mealapi.model.ResponseSearchMeal
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -22,6 +23,11 @@ interface MealApiService {
     suspend fun getMealDetailsById(
         @Query("i") mealId: String
     ): Response<ResponseMealDetails>
+
+    @GET("search.php")
+    suspend fun getSearchMeal(
+        @Query("s") mealName: String
+    ): Response<ResponseSearchMeal>
 }
 
 object Service {
