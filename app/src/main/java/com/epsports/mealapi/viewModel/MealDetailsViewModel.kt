@@ -18,5 +18,8 @@ class MealDetailsViewModel: ViewModel() {
             _mealDetails.value = mealDetailsResponse.body()
         }
     }
-
 }
+
+
+
+
