@@ -1,6 +1,7 @@
 package com.epsports.mealapi.apiService
 
 import com.epsports.mealapi.model.ResponseMealCategoryDetails
+import com.epsports.mealapi.model.ResponseMealDetails
 import com.epsports.mealapi.model.ResponseMealsCategory
 import retrofit2.Response
 import retrofit2.Retrofit
@@ -16,6 +17,11 @@ interface MealApiService {
     suspend fun getMealCategoryDetails(
         @Query("c") category: String
     ): Response<ResponseMealCategoryDetails>
+
+    @GET("lookup.php")
+    suspend fun getMealDetailsById(
+        @Query("i") mealId: String
+    ): Response<ResponseMealDetails>
 }
 
 object Service {

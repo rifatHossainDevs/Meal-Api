@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".MealDetailsActivity">
+
+    <ImageView
+        android:id="@+id/ivMealImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/image_background"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/salmon_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivWatchOnYoutube"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/play_button"
+        app:layout_constraintEnd_toEndOf="@id/ivMealImage"
+        app:layout_constraintBottom_toBottomOf="@id/ivMealImage"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/tvMealName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Meal Name"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivMealImage" />
+
+    <TextView
+        android:id="@+id/tvMealCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Category: Chicken"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMealName" />
+
+    <TextView
+        android:id="@+id/tvMealOriginCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Origin Country: Japanes"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMealCategory" />
+
+    <TextView
+        android:id="@+id/tvMealTags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Tags: "
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMealOriginCountry" />
+
+    <TextView
+        android:id="@+id/tvMealIngredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Ingredients: "
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMealTags" />
+
+    <TextView
+        android:id="@+id/tvMealInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Instructions goes Here...."
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMealIngredients" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
